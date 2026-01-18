@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NORDWALL Systems - Montaj profesional de rigips, tavane suspendate și finisaje interioare în Botoșani, România. Construit cu Precizie. Excelență Livrată.">
+    <title>NORDWALL Systems | Rigips și Soluții de Interior Premium</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-nord">NORD</span><span class="logo-wall">WALL</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Servicii</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Despre Noi</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviews" class="nav__link">Recenzii</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portofoliu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__content container">
+                <p class="hero__tagline">Soluții Premium de Rigips și Interior</p>
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Construit cu Precizie.</span>
+                    <span class="hero__title-line">Excelență Livrată.</span>
+                </h1>
+                <p class="hero__description">
+                    Transformăm spații cu măiestrie superioară și calitate de necompromis.
+                    Partenerul dvs. de încredere pentru sisteme de rigips, tavane suspendate și finisaje interioare în România.
+                </p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Solicită Ofertă Gratuită</a>
+                    <a href="#portfolio" class="btn btn--secondary">Vezi Lucrările Noastre</a>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span>Derulează pentru a explora</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__tagline">Ce Facem</p>
+                    <h2 class="section__title">Serviciile Noastre</h2>
+                    <p class="section__description">
+                        Soluții complete de rigips și interior adaptate nevoilor dvs.,
+                        livrate cu precizie și excelență.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="8" width="36" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <line x1="6" y1="16" x2="42" y2="16" stroke="currentColor" stroke-width="2"/>
+                                <line x1="6" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="2"/>
+                                <line x1="6" y1="32" x2="42" y2="32" stroke="currentColor" stroke-width="2"/>
+                                <line x1="18" y1="8" x2="18" y2="40" stroke="currentColor" stroke-width="2"/>
+                                <line x1="30" y1="8" x2="30" y2="40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Montaj Rigips</h3>
+                        <p class="service-card__description">
+                            Sisteme complete de pereți cu plăci de gips premium. De la locuințe rezidențiale până la
+                            complexuri comerciale, livrăm instalații impecabile cu finisaj de calitate superioară.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Plăci standard și rezistente la umiditate</li>
+                            <li>Ansambluri rezistente la foc</li>
+                            <li>Soluții de izolare fonică</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="6" width="40" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <line x1="8" y1="10" x2="8" y2="18" stroke="currentColor" stroke-width="2"/>
+                                <line x1="40" y1="10" x2="40" y2="18" stroke="currentColor" stroke-width="2"/>
+                                <rect x="4" y="18" width="40" height="24" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <line x1="4" y1="26" x2="44" y2="26" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
+                                <line x1="4" y1="34" x2="44" y2="34" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Tavane Suspendate</h3>
+                        <p class="service-card__description">
+                            Sisteme moderne de tavane false care combină estetica cu funcționalitatea.
+                            Perfecte pentru birouri, spații comerciale și medii de afaceri.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Plăci de tavan acustice</li>
+                            <li>Soluții de iluminat integrate</li>
+                            <li>Panouri cu acces facil</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="6" width="14" height="36" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="26" y="6" width="14" height="36" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <line x1="22" y1="12" x2="26" y2="12" stroke="currentColor" stroke-width="2"/>
+                                <line x1="22" y1="20" x2="26" y2="20" stroke="currentColor" stroke-width="2"/>
+                                <line x1="22" y1="28" x2="26" y2="28" stroke="currentColor" stroke-width="2"/>
+                                <line x1="22" y1="36" x2="26" y2="36" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Pereți Despărțitori</h3>
+                        <p class="service-card__description">
+                            Soluții flexibile de compartimentare pentru birouri și interioare comerciale.
+                            Creați spații de lucru funcționale cu sistemele noastre modulare de pereți despărțitori.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Separatoare de birouri</li>
+                            <li>Pereți demontabili</li>
+                            <li>Opțiuni de integrare sticlă</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us section section--dark" id="why-us">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__tagline">De Ce NORDWALL</p>
+                    <h2 class="section__title">Clădit pe Excelență</h2>
+                </div>
+
+                <div class="stats__grid">
+                    <div class="stat">
+                        <div class="stat__number" data-count="15">0</div>
+                        <div class="stat__label">Ani de Experiență</div>
+                        <p class="stat__description">Peste un deceniu de transformare a spațiilor în toată România</p>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat__number" data-count="500">0</div>
+                        <div class="stat__label">Proiecte Finalizate</div>
+                        <p class="stat__description">Instalații rezidențiale, comerciale și industriale</p>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat__number stat__number--percent" data-count="100">0</div>
+                        <div class="stat__label">Satisfacția Clienților</div>
+                        <p class="stat__description">Angajamentul nostru față de calitate vorbește de la sine</p>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat__number stat__number--time">24/7</div>
+                        <div class="stat__label">Suport Disponibil</div>
+                        <p class="stat__description">Mereu aici când aveți cea mai mare nevoie</p>
+                    </div>
+                </div>
+
+                <div class="values__grid">
+                    <div class="value">
+                        <div class="value__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value__title">Calitate pe Primul Loc</h3>
+                        <p class="value__description">Materiale premium și tehnici certificate asigură rezultate durabile.</p>
+                    </div>
+
+                    <div class="value">
+                        <div class="value__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="12" x2="15" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3 class="value__title">Livrare la Timp</h3>
+                        <p class="value__description">Respectăm programul dvs. și livrăm proiectele la timp, de fiecare dată.</p>
+                    </div>
+
+                    <div class="value">
+                        <div class="value__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="value__title">Lucru de Precizie</h3>
+                        <p class="value__description">Atenție meticuloasă la detalii în fiecare îmbinare și finisaj.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__content">
+                        <p class="section__tagline">Povestea Noastră</p>
+                        <h2 class="section__title">Creăm Excelență din 2009</h2>
+                        <div class="about__text">
+                            <p>
+                                NORDWALL Systems a fost fondată în Botoșani cu o viziune unică: să ridice
+                                standardele de montaj rigips și finisaje interioare în România.
+                                Ceea ce a început ca o echipă mică de meșteșugari dedicați a crescut într-un nume
+                                de încredere în industria construcțiilor.
+                            </p>
+                            <p>
+                                Fondatorul nostru, cu peste două decenii de experiență în proiecte de construcții
+                                europene, a adus înapoi cele mai înalte standarde de precizie și calitate.
+                                Astăzi, combinăm meșteșugul tradițional cu tehnici și
+                                materiale moderne pentru a livra rezultate excepționale.
+                            </p>
+                            <p>
+                                De la renovări rezidențiale până la proiecte comerciale de mare anvergură, abordăm
+                                fiecare lucrare cu același angajament față de excelență. Echipa noastră de profesioniști
+                                certificați urmează training continuu pentru a rămâne în fruntea
+                                inovațiilor din industrie.
+                            </p>
+                        </div>
+
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Profesioniști certificați</span>
+                            </div>
+                            <div class="about__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Doar materiale premium</span>
+                            </div>
+                            <div class="about__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Garanție 5 ani pentru manoperă</span>
+                            </div>
+                            <div class="about__feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Operațiuni complet asigurate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__visual">
+                        <div class="about__image-placeholder">
+                            <div class="about__image-text">
+                                <span class="about__image-number">15+</span>
+                                <span class="about__image-label">Ani de<br>Excelență</span>
+                            </div>
+                        </div>
+                        <div class="about__accent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews section section--light" id="reviews">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__tagline">Testimoniale</p>
+                    <h2 class="section__title">Ce Spun Clienții Noștri</h2>
+                    <p class="section__description">
+                        Feedback real de la proiecte reale. Descoperiți de ce clienții din toată România au încredere în NORDWALL.
+                    </p>
+                </div>
+
+                <div class="reviews__grid">
+                    <article class="review-card">
+                        <div class="review-card__stars">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <blockquote class="review-card__text">
+                            „NORDWALL ne-a transformat întregul apartament. Lucrarea de rigips este impecabilă - nu
+                            puteți găsi nicio imperfecțiune. Au terminat înainte de termen și au lăsat
+                            șantierul impecabil. Cu adevărat profesioniști de la început până la sfârșit."
+                        </blockquote>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">AP</div>
+                            <div class="review-card__info">
+                                <cite class="review-card__name">Alexandru Popescu</cite>
+                                <span class="review-card__project">Renovare Rezidențială, Botoșani</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <blockquote class="review-card__text">
+                            „Am angajat NORDWALL pentru noul nostru spațiu de birouri - 800 de metri pătrați de pereți
+                            despărțitori și tavane suspendate. Expertiza lor în soluții acustice a făcut o
+                            diferență enormă. Echipa a fost organizată, comunicativă și a livrat exact
+                            ceea ce a promis."
+                        </blockquote>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">MI</div>
+                            <div class="review-card__info">
+                                <cite class="review-card__name">Maria Ionescu</cite>
+                                <span class="review-card__project">Renovare Birou, Suceava</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <blockquote class="review-card__text">
+                            „Ca dezvoltator, am lucrat cu mulți antreprenori. NORDWALL se remarcă prin
+                            profesionalism și calitate. Au finalizat montajul de rigips pentru
+                            clădirea noastră rezidențială cu 24 de unități la timp și în buget. Foarte recomandați
+                            pentru proiecte de scară comercială."
+                        </blockquote>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">AM</div>
+                            <div class="review-card__info">
+                                <cite class="review-card__name">Andrei Moldovan</cite>
+                                <span class="review-card__project">Dezvoltare Comercială, Iași</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <blockquote class="review-card__text">
+                            „Atenția la detalii este remarcabilă. Aveam nevoie de rigips rezistent la umiditate
+                            pentru renovările băilor dintr-un complex de apartamente. Echipa NORDWALL știa
+                            exact ce materiale și tehnici să folosească. Zero probleme după doi ani."
+                        </blockquote>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">ED</div>
+                            <div class="review-card__info">
+                                <cite class="review-card__name">Elena Diaconu</cite>
+                                <span class="review-card__project">Complex de Apartamente, Botoșani</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <blockquote class="review-card__text">
+                            „Restaurantul nostru avea nevoie de o transformare interioară completă cu design personalizat
+                            de tavane. NORDWALL a creat exact ceea ce ne-am imaginat - modern, elegant și
+                            cu acustică perfectă. Oaspeții complimentează mereu atmosfera."
+                        </blockquote>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">BM</div>
+                            <div class="review-card__info">
+                                <cite class="review-card__name">Bogdan Munteanu</cite>
+                                <span class="review-card__project">Interior Restaurant, Piatra Neamț</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <blockquote class="review-card__text">
+                            „Pentru clinica noastră medicală, igiena și precizia erau esențiale. NORDWALL
+                            a livrat o lucrare impecabilă cu atenție specială la cerințele
+                            mediului steril. Cunoștințele lor despre standardele facilităților medicale au impresionat
+                            întreaga noastră echipă."
+                        </blockquote>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">CG</div>
+                            <div class="review-card__info">
+                                <cite class="review-card__name">Dr. Cristina Gheorghiu</cite>
+                                <span class="review-card__project">Clinică Medicală, Botoșani</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__tagline">Lucrările Noastre</p>
+                    <h2 class="section__title">Proiecte Reprezentative</h2>
+                    <p class="section__description">
+                        O selecție din cele mai bune lucrări ale noastre în proiecte rezidențiale, comerciale și specializate.
+                    </p>
+                </div>
+
+                <div class="portfolio__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop" alt="Complex de Birouri TechHub" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Comercial</span>
+                            <h3 class="project-card__title">Complex de Birouri TechHub</h3>
+                            <p class="project-card__description">
+                                Montaj complet de rigips și tavan pentru un spațiu modern de birouri de 2.000 m²
+                                cu soluții acustice integrate și canale de iluminat personalizate.
+                            </p>
+                            <span class="project-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Iași, România
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop" alt="Apartamente de Lux Riverside" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Rezidențial</span>
+                            <h3 class="project-card__title">Apartamente de Lux Riverside</h3>
+                            <p class="project-card__description">
+                                Finisaje interioare pentru 48 de apartamente premium, inclusiv rigips cu finisaj
+                                nivel 5, detalii personalizate de tavan și izolare fonică între unități.
+                            </p>
+                            <span class="project-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Botoșani, România
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="Centru de Diagnostic MedCare" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Sănătate</span>
+                            <h3 class="project-card__title">Centru de Diagnostic MedCare</h3>
+                            <p class="project-card__description">
+                                Unitate medicală specializată cu sisteme de rigips rezistent la umiditate și antimicrobian,
+                                respectând reglementările stricte ale facilităților medicale.
+                            </p>
+                            <span class="project-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Suceava, România
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Renovare Grand Hotel" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Ospitalitate</span>
+                            <h3 class="project-card__title">Renovare Grand Hotel</h3>
+                            <p class="project-card__description">
+                                Renovare completă a 120 de camere de oaspeți și zone publice cu finisaje
+                                premium, elemente decorative de tavan și izolare fonică îmbunătățită.
+                            </p>
+                            <span class="project-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Piatra Neamț, România
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Interior Fashion Mall" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Retail</span>
+                            <h3 class="project-card__title">Interior Fashion Mall</h3>
+                            <p class="project-card__description">
+                                Amenajare spațiu comercial inclusiv pereți despărțitori modulari, sisteme de grilă
+                                pentru tavan suspendat și instalații personalizate de pereți pentru expunere.
+                            </p>
+                            <span class="project-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Iași, România
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop" alt="Campus Școală Internațională" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Educație</span>
+                            <h3 class="project-card__title">Campus Școală Internațională</h3>
+                            <p class="project-card__description">
+                                Montaj de rigips și tavan acustic pentru construcție nouă în
+                                30 de săli de clasă, birouri administrative și zone comune.
+                            </p>
+                            <span class="project-card__location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Botoșani, România
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section section--dark" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <p class="section__tagline">Contactați-ne</p>
+                        <h2 class="section__title">Începeți Proiectul Astăzi</h2>
+                        <p class="contact__description">
+                            Sunteți gata să vă transformați spațiul? Contactați-ne pentru o consultație
+                            și ofertă gratuită. Echipa noastră este pregătită să vă aducă viziunea la viață.
+                        </p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4>Adresă</h4>
+                                    <p>Strada Calea Națională 72<br>Botoșani 710001, România</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4>Telefon</h4>
+                                    <p>+40 231 456 789</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4>Email</h4>
+                                    <p>contact@nordwall.ro</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h4>Program de Lucru</h4>
+                                    <p>Luni - Vineri: 8:00 - 18:00<br>Sâmbătă: 9:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Nume Complet</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Numele dvs." required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">Adresă de Email</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="email@exemplu.com" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Număr de Telefon</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="+40 XXX XXX XXX">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="service" class="form__label">Serviciu de Interes</label>
+                                <select id="service" name="service" class="form__input form__select">
+                                    <option value="">Selectați un serviciu</option>
+                                    <option value="drywall">Montaj Rigips</option>
+                                    <option value="ceilings">Tavane Suspendate</option>
+                                    <option value="partitions">Pereți Despărțitori</option>
+                                    <option value="other">Altele / Servicii Multiple</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group form__group--full">
+                                <label for="message" class="form__label">Detalii Proiect</label>
+                                <textarea id="message" name="message" class="form__input form__textarea" placeholder="Spuneți-ne despre proiectul dvs..." rows="4" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">
+                                <span>Solicitați Ofertă Gratuită</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12,5 19,12 12,19"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Sunteți Gata să Construiți Ceva Excepțional?</h2>
+                    <p class="cta__description">
+                        Haideți să discutăm despre proiectul dvs. și să descoperiți cum NORDWALL vă poate transforma spațiul.
+                    </p>
+                    <a href="#contact" class="btn btn--primary btn--large">Obțineți Oferta Gratuită</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="logo-nord">NORD</span><span class="logo-wall">WALL</span>
+                    </a>
+                    <p class="footer__tagline">Construit cu Precizie. Excelență Livrată.</p>
+                    <p class="footer__description">
+                        Soluții premium de rigips și interior pentru proiecte rezidențiale și comerciale în toată România.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Linkuri Rapide</h4>
+                    <ul class="footer__list">
+                        <li><a href="#services">Servicii</a></li>
+                        <li><a href="#about">Despre Noi</a></li>
+                        <li><a href="#reviews">Recenzii</a></li>
+                        <li><a href="#portfolio">Portofoliu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Servicii</h4>
+                    <ul class="footer__list">
+                        <li><a href="#services">Montaj Rigips</a></li>
+                        <li><a href="#services">Tavane Suspendate</a></li>
+                        <li><a href="#services">Pereți Despărțitori</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contactați-ne</h4>
+                    <ul class="footer__list">
+                        <li>Strada Calea Națională 72</li>
+                        <li>Botoșani 710001, România</li>
+                        <li>+40 231 456 789</li>
+                        <li>contact@nordwall.ro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 NORDWALL Systems. Toate drepturile rezervate.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
